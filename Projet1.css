@@ -1,0 +1,342 @@
+/*Définition des polices personnalisées*/
+@font-face{
+	font-family: 'fontawesome';
+	src:url('webagency_images/fonts/fontawesome-webfont.eot');
+	src:url('webagency_images/fonts/fontawesome-webfont.svg');
+	src:url('webagency_images/fonts/fontawesome-webfont.ttf');
+	src:url('webagency_images/fonts/fontawesome-webfont.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'glyphicons-halflings-regular';
+	src:url('webagency_images/fonts/glyphicons-halflings-regular.eot');
+	src:url('webagency_images/fonts/glyphicons-halflings-regular.svg');
+	src:url('webagency_images/fonts/glyphicons-halflings-regular.ttf');
+	src:url('webagency_images/fonts/glyphicons-halflings-regular.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Roboto-Black', 'Roboto-Blackitalic','Roboto-Light', 'Roboto-Bold', 'Roboto-Bolditalic','Roboto-Lightiltalic','Roboto-Italic','Roboto-Medium', 'Roboto-Mediumitalic', 'Roboto-Regular', 'Roboto-Thin', 'Roboto-Thinitalic';
+	src:url('webagency_images/fonts/Roboto-Black.ttf');
+	src:url('webagency_images/fonts/Roboto-Blackitalic.ttf');
+	src:url('webagency_images/fonts/Roboto-Bold.ttf');
+	src:url('webagency_images/fonts/Roboto-Bolditalic.ttf');
+	src:url('webagency_images/fonts/Roboto-Italic.ttf');
+	src:url('webagency_images/fonts/Roboto-Light.ttf');
+	src:url('webagency_images/fonts/Roboto-Lightiltalic.ttf');
+	src:url('webagency_images/fonts/Roboto-Medium.ttf');
+	src:url('webagency_images/fonts/Roboto-Mediumitalic.ttf');
+	src:url('webagency_images/fonts/Roboto-Regular.ttf');
+	src:url('webagency_images/fonts/Roboto-Thin.ttf');
+	src:url('webagency_images/fonts/Roboto-Thinitalic.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+  font-family: 'Roboto-Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url('file:///Users/francoispiat/Desktop/Projet1Open/webagency_images/fonts/Roboto-Black.ttf') format('ttf');
+  
+}
+
+/*Eléments principaux de la page*/
+#bloc_page
+{
+	width: 80%;
+	margin: auto;
+}
+
+header h1, footer h1, li
+{
+	font-family:'Roboto-Black';
+	
+}
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+#titre_principal
+{
+	display: flex;
+	flex-direction: column;
+}
+#logo
+{
+	display: flex;
+	margin-left: 150px;
+	margin-bottom:-30px;
+	flex-direction: row;
+	align-items: baseline;
+	
+}
+.slogan{
+	position: relative;
+	z-index: 10;
+	margin-left: 150px;
+	margin-top: -450px;
+	color: white;
+
+}
+
+header nav ul
+{
+	text-decoration: none;
+	list-style-type: none;
+	display: flex;
+	float: right;
+	margin-right: 200px;
+}
+header nav li
+{
+	display: flex;
+	align-items: flex-end;
+	text-decoration: none;
+	margin-right: 15px;
+
+}
+header nav a
+{
+	color: #000000;
+	text-decoration: none;
+}
+header nav a:hover
+{
+	text-decoration: none;
+	border-top: 3px solid #1AADD6;
+	padding-top: 20px;
+}
+h1 span{
+	color: #1AADD6;
+}
+#WEBAGENCY{
+	position: absolute;
+	top: 280px;
+	z-index: 3;
+	font-size: 90%;
+}
+.bouton_bleu
+{
+	display: inline-block;
+	border: solid #1AADD6;
+	margin-top: -10%;
+	padding: 3px;
+	background-color: #1AADD6;
+	text-decoration: none;
+	color: white;
+}
+.bouton_bleu a{
+	text-decoration: none;
+	color: white;
+}
+.slider_image
+{
+	width: 1600px;
+	height: 550px;
+}
+#slider1
+{
+	width: 1600px;
+	height: 550px;
+	position: absolute;
+	z-index: 1;
+	transition: right 1s;
+}
+#slider2
+{
+	width: 1600px;
+	height: 550px;
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	width: 50%;
+}
+#slider2:target #slider1{
+	right: -100%;
+}
+.bouton_slide
+{
+	
+	display: flex;
+	position: relative;
+	z-index: 5;
+	
+}
+
+#fleche_gauche 
+{
+	font-size: 25px;
+	display: flex;
+	position: relative;
+	z-index: 5;
+	bottom: 300px;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	width: 35px;
+	height: 70px;
+	border-radius: 0px 70px 70px 0px;
+	color: white;
+	background-color: black;
+	opacity: 0.6;
+
+}
+#fleche_droite
+{
+	font-size: 25px;
+	display: flex;
+	position: relative;
+	z-index: 6;
+	bottom: 370px;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	left: 1565px;
+	width: 35px;
+	height: 70px;
+	border-radius: 70px 0px 0px 70px;
+	color: white;
+	background-color: black;
+	opacity: 0.6;
+}
+#trait_navigation
+{
+	position: absolute;
+	margin-top: -78px;
+	border-top: 3px solid #1AADD6;
+	width: 150px;
+}
+
+h1 
+{
+	text-align: left;
+}
+#NOS_SERVICES
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+	position: relative;
+	text-align: center;
+}
+#service 
+{	
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 10px;
+	margin: 0px auto;
+	padding: 20px;
+	border-bottom: 1px solid #E6E1E1;
+	width: 10%;	
+}
+
+
+.trait_gauche .trait_droite .trait_deco_titre
+{
+	margin-top: 5px;
+	text-align: center;
+	width: 40px;
+
+}
+.rond_bleu{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	right: 50%;
+	left: 50%;
+	bottom: -10px;
+	margin-top: 0px;
+	margin-bottom: 1px;
+	width: 8px;
+	background-color: #1AADD6;
+	height: 8px;
+	border-radius: 50%;
+	border: 6px solid white;
+	
+}
+
+.paragraphe 
+{
+	text-align: center;
+	
+}
+#photo_ecran 
+{
+	width: 30%;
+	margin-left: 250px;
+}
+
+#Ecran .Screen_left{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 100px;
+	float: left;
+}
+
+#Services_design .Screen_right{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	float: right;
+	width: 30%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+#Menu
+{
+	text-decoration: none;
+	border: solid #E6E1E1;
+	font-size: 18px;
+	display: inline-flex;
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	background-color: #E6E1E1;
+	color: black;
+	background: linear-gradient;
+}
+
+#Menu td:hover
+{
+	text-decoration: none;
+	display: inline-block;
+	border: 5px solid #1AADD6;
+	margin: 0;
+	background-color: #1AADD6;
+	border-collapse: collapse;
+	border-bottom: 5px solid #2D9FC4;
+	color: white;
+	
+}
+#triangle 
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: absolute;
+	font-size: 0px;
+	line-height: 0%;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 12px 10px 0px 10px;
+	border-color: #2D9FC4 transparent transparent transparent;
+	margin-bottom: -100px;
+	margin-left: -100px;
+
+}
+
+
+
+
+
