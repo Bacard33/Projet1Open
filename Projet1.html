@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<title>WebAgency</title>
 		<link rel="stylesheet" href="Projet1.css"/>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	</head>
 
 	<body>
@@ -57,7 +57,7 @@
 				<div class="slogan">
 					
 					<h1><span>WEBAGENCY</span>: L'AGENCE DE TOUS <br /> VOS PROJETS !</h1>
-					<p>Vous avez un projet web? La WebAgency vous aide à le réaliser!</p>
+					<p>Vous avez un projet web? La WebAgency vous aide à le réaliser !</p>
 					<p class="bouton_bleu">
 					<a href="#NOS PROJETS">Plus d'infos</a></p>
 				</div>
@@ -130,7 +130,7 @@
 				<!--SECTION PROJETS-->
 		
 		<section>
-			
+				<div id="cadre_gris">
 				<div id="NOS_SERVICES">
 				<h1 id="projet">NOS PROJETS</h1>
 					<div class="deco_titre">
@@ -140,7 +140,6 @@
 			<p>Notre agence web est capable de répondre à tous vos besoins et d'élaborer une véritable stratégie digitale</p>
 		</div>
 	</div>
-
 				<div id="Menu">
 				<ul> 
 					<li>
@@ -205,30 +204,31 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</section>
 
 				<!--FOOTER-->
 
 		<footer>
 			<div id="Carte">
+				<div id="filtre_bleu"></div>
 				<iframe id="googlemap"
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246133753!2d2.347631551360887!3d48.87305530752614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1542396458081" width="1600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246133753!2d2.347631551360887!3d48.87305530752614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1542396458081" width="1600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+				
 
-				<div id="Formulaire de contact">
+				<div id="Formulaire">
 				<h3>Contact Info</h3>
 				<p>WebAgency SAS</p>
 				<p>25 rue d'Hauteville 75010 Paris</p>
-				<p>Tel: 01 02 03 04 05</p>
+				<p><span>Tel:</span> 01 02 03 04 05</p>
 				
-
-				<div class="Cadre_gris">
 				<form method="post" action="traitement.php">
 					<p><input name="pseudo" placeholder="Name"></p>
 					<p><input type="e-mail" placeholder="E-mail"></p>
 					<p><input type="text" placeholder="Subject"></p>
 					<p><label><textarea id="Message"cols="0" rows="0"></textarea></label></p>
 		
-					<p class="bouton_bleu">
+					<p class="send">
 					<a href="#">Send Message</a></p>
 				</div>
 			</div>	

@@ -1,45 +1,39 @@
 /*Définition des polices personnalisées*/
-@font-face{
-	font-family: 'fontawesome';
-	src:url('webagency_images/fonts/fontawesome-webfont.eot');
-	src:url('webagency_images/fonts/fontawesome-webfont.svg');
-	src:url('webagency_images/fonts/fontawesome-webfont.ttf');
-	src:url('webagency_images/fonts/fontawesome-webfont.woff');
-	font-weight: normal;
-	font-style: normal;
+@font-face {
+    font-family: 'robotoblack';
+    src: url('webagency_images/web fonts/roboto_black_macroman/Roboto-Black-webfont.eot');
+    src: url('webagency_images/web fonts/roboto_black_macroman/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webagency_images/web fonts/roboto_black_macroman/Roboto-Black-webfont.woff2') format('woff2'),
+         url('webagency_images/web fonts/roboto_black_macroman/Roboto-Black-webfont.woff') format('woff'),
+         url('webagency_images/web fonts/roboto_black_macroman/Roboto-Black-webfont.ttf') format('truetype'),
+         url('webagency_images/web fonts/roboto_black_macroman/Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
-@font-face{
-	font-family: 'glyphicons-halflings-regular';
-	src:url('webagency_images/fonts/glyphicons-halflings-regular.eot');
-	src:url('webagency_images/fonts/glyphicons-halflings-regular.svg');
-	src:url('webagency_images/fonts/glyphicons-halflings-regular.ttf');
-	src:url('webagency_images/fonts/glyphicons-halflings-regular.woff');
-	font-weight: normal;
-	font-style: normal;
+@font-face {
+    font-family: 'robotomedium';
+    src: url('webagency_images/web fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot');
+    src: url('webagency_images/web fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webagency_images/web fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff2') format('woff2'),
+         url('webagency_images/web fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff') format('woff'),
+         url('webagency_images/web fonts/roboto_medium_macroman/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('webagency_images/web fonts/roboto_medium_macroman/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
-@font-face{
-	font-family: 'Roboto-Black', 'Roboto-Blackitalic','Roboto-Light', 'Roboto-Bold', 'Roboto-Bolditalic','Roboto-Lightiltalic','Roboto-Italic','Roboto-Medium', 'Roboto-Mediumitalic', 'Roboto-Regular', 'Roboto-Thin', 'Roboto-Thinitalic';
-	src:url('webagency_images/fonts/Roboto-Black.ttf');
-	src:url('webagency_images/fonts/Roboto-Blackitalic.ttf');
-	src:url('webagency_images/fonts/Roboto-Bold.ttf');
-	src:url('webagency_images/fonts/Roboto-Bolditalic.ttf');
-	src:url('webagency_images/fonts/Roboto-Italic.ttf');
-	src:url('webagency_images/fonts/Roboto-Light.ttf');
-	src:url('webagency_images/fonts/Roboto-Lightiltalic.ttf');
-	src:url('webagency_images/fonts/Roboto-Medium.ttf');
-	src:url('webagency_images/fonts/Roboto-Mediumitalic.ttf');
-	src:url('webagency_images/fonts/Roboto-Regular.ttf');
-	src:url('webagency_images/fonts/Roboto-Thin.ttf');
-	src:url('webagency_images/fonts/Roboto-Thinitalic.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face{
-  font-family: 'Roboto-Black';
-  font-style: normal;
-  font-weight: 400;
-  src: url('file:///Users/francoispiat/Desktop/Projet1Open/webagency_images/fonts/Roboto-Black.ttf') format('ttf');
-  
+@font-face {
+    font-family: 'robotoregular';
+    src: url('webagency_images/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('webagency_images/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webagency_images/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('webagency_images/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+         url('webagency_images/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('webagency_images/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /*Eléments principaux de la page*/
@@ -50,9 +44,9 @@
 	margin-right: 10%;
 }
 
-header h1, footer h1, li
+header h1
 {
-	font-family:'Roboto-Black';
+	font-family:'RobotoBlack';
 	
 }
 header
@@ -82,7 +76,9 @@ header
 	margin-left: 150px;
 	margin-top: -450px;
 	color: white;
-
+}
+.slogan p{
+	font-family: 'robotoregular';
 }
 
 header nav ul
@@ -104,11 +100,13 @@ header nav li
 }
 header nav a
 {
+	font-family: 'robotoregular';
 	color: black;
 	text-decoration: none;
 }
 header nav li:hover
 {
+	font-weight: bold;
 	border-top: 3px solid #1AADD6;
 	padding-top: 22px;
 }
@@ -123,10 +121,13 @@ h1 span{
 }
 .bouton_bleu
 {
+	font-family: 'robotomedium';
 	display: inline-block;
 	border: solid #1AADD6;
 	margin-top: -10%;
 	padding: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
 	background-color: #1AADD6;
 	text-decoration: none;
 	color: white;
@@ -219,6 +220,7 @@ h1
 }
 #NOS_SERVICES
 {
+	
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -228,6 +230,8 @@ h1
 }
 #service /*titre*/
 {	
+	font-family: 'robotomedium';
+	font-size: 1.9em;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -299,6 +303,7 @@ i.point_titre{
 
 .paragraphe 
 {
+	font-family: 'robotoregular';
 	text-align: center;
 	
 }
@@ -351,7 +356,18 @@ i.point_titre{
 }
 .text_design
 {
-	margin-left: 90px;
+	margin-left: 50px;
+}
+.text_design h3
+{
+	font-family: 'robotomedium';
+	font-weight: bold;
+	margin-left: 50px;
+}
+.text_design p
+{
+	font-family: 'robotoregular';
+	margin-left: 50px;
 }
 #projet/*titre*/
 {	
@@ -424,6 +440,11 @@ i.point_titre{
 	margin-left: 30px;
 	margin-top: 2%;
 }
+#cadre_gris
+{
+	background-color: #F5F5F5;
+}
+
 #projets_photos
 {
 	display: inline-block;
@@ -518,6 +539,60 @@ i.point_titre{
 	position: relative;
 	text-align: center;
 }
+#carte
+{
+	position: relative;
+	width: 100%;
+}
 
+#filtre_bleu
+{
+	position: absolute;
+	background-color: #87CEFA;
+	opacity: 1;
+}
+iframe
+{
+	position: absolute;
+	opacity: 0.5;
+
+}
+#Formulaire 
+{
+	position: absolute;
+	width: 30%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 5%;
+	margin-top: 40px;
+	background-color: #F5F5F5;
+	margin-bottom: 40px;
+	opacity: 0.9;
+}
+p span
+{
+	border-bottom: dotted;
+}
+input{
+	margin-bottom: 3px;
+	width: 95%;
+	padding:4px;
+}
+textarea {
+	width: 95%;
+	height: 130px;
+	padding: 5px;
+}
+.send a{
+
+	display: inline-block;
+	border: 1px solid #1AADD6;
+	margin-top: -10%;
+	padding: 5px;
+	background-color: #1AADD6;
+	text-decoration: none;
+	border-bottom: 5px solid #2D9FC4;
+	color: white;
+}
 
 
