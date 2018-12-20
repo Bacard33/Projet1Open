@@ -482,16 +482,23 @@ i.point_titre{
 	margin-right: 5px;
 
 }
+#projets_photos figure:hover figcaption
+{
+	display: block;
+
+}
 #projets_photos figcaption 
 {
 	position: absolute;
-	opacity: 0;
-	bottom: 15px;
-	left: 10px;
-	right: 10px;
-	padding: 8px;
+	
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 15px;
 	height: 40px;
+	background-color: rgba(0,0,0,0.3);
 }
+/*
 #projets_photos figcaption:hover 
 {
 	position: absolute;
@@ -499,22 +506,23 @@ i.point_titre{
 	left: 1px;
 	right: 1px;
 	padding: 15px;
-	background-color: rgba(0,0,0,0.3);/*pour ombre banniere*/
+	background-color: rgba(0,0,0,0.3);
 	opacity: 1;
 	color: white;
 	font-family: 'robotomedium';
 	font-size: 0.8em;
 }
+*/
 #projets_photos h3
 {
 	position: absolute;
 	top: -5px;
-	opacity: 0;
 	left: 15px;
 	font-family: 'robotomedium';
 	color: white;
 	
 }
+/*
 #projets_photos h3:hover
 {
 	position: absolute;
@@ -526,6 +534,7 @@ i.point_titre{
 	font-size: 1.1em;
 	color: white;	
 }
+*/
 figure.Portfolio
 {
 	display: block;
