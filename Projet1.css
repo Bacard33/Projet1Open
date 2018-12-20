@@ -593,17 +593,15 @@ figure.Portfolio:hover figcaption
 {
 	position: absolute;
 	background-color: #87CEFA;
-	opacity: 0.95;
-}
-fieldset
-{
-	border: none;
-	position: relative;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
 }
 
+/*
 #Formulaire 
 {
-	position: relative;
+	position: absolute;
 	width: 280px;
 	height: 480px;
 	padding-bottom: 20px;
@@ -616,6 +614,15 @@ fieldset
 	margin-bottom: 40px;
 	opacity: 0.9;
 	font-family: 'robotomedium';
+	top:0px;
+	left: 0px;
+}
+*/
+#Formulaire
+{
+	position: absolute;
+	top:0px;
+	left:0px;
 }
 p span
 {
