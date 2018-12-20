@@ -470,7 +470,7 @@ i.point_titre{
 	display: block;
 	width: 100%;
 	margin-right: 5px;
-	margin-bottom: 5px;
+	
 	position: relative;
 
 }
@@ -490,13 +490,16 @@ i.point_titre{
 #projets_photos figcaption 
 {
 	position: absolute;
-	
+	display: none;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
 	padding: 15px;
 	height: 40px;
 	background-color: rgba(0,0,0,0.3);
+	font-family: 'robotomedium';
+	font-size: 0.8em;
+	color: white;
 }
 /*
 #projets_photos figcaption:hover 
@@ -519,6 +522,7 @@ i.point_titre{
 	top: -5px;
 	left: 15px;
 	font-family: 'robotomedium';
+	font-weight: bold;
 	color: white;
 	
 }
