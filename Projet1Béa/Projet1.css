@@ -50,7 +50,7 @@ body
 	align-items: flex-end;
 	justify-content: space-between;
 	width: 100%;
-	height: 90px;
+	height: auto;
 	top:0px;
 	margin: 0px;
 	background-color: white;
@@ -66,6 +66,7 @@ header
 	position: fixed;
 	z-index: 9;	
 	width: 100%;
+	top: 0px;
 }
 #logo
 {
@@ -83,7 +84,6 @@ header nav ul
 header nav li
 {
 	display: flex;
-	float: right;
 	justify-content: flex-end;
 	text-decoration: none;
 	margin-right: 30px;
@@ -101,23 +101,35 @@ header nav li:hover
 	border-top: 3px solid #1AADD6;
 	padding-top: 22px;
 }
-.slogan{
-	font-family: 'RobotoBlack';
-	position: relative;
-	width: 500px;
-	height: 200px;
-	z-index: 10;
-	margin-bottom: 100px;
-	margin-top: -425px;
-	padding-left: 200px;
-	color: white;
-	text-align: left;
+@media all and (min-width:481px) and (max-width:1024px){
+	header nav ul{
+		justify-content: center;
+		align-items: center;
+		margin-right: 5px;
+		margin-top:0px;
+		padding: 0px;
+	}
+	header nav{
+		margin-top: 0px;
+	}
+	#logo{
+		justify-content: center;
+		width: 50%;
+		padding: 7px 0px 7px 0px;
+	}
 }
-.slogan p{
-	font-family: 'RobotoBlack';
-	margin-top: -15px;
-	padding-top: -10px;
-	margin-bottom: 25px;
+@media all and (max-width: 320px){
+	header nav ul{
+		justify-content: center;
+		align-items: center;
+		margin-right: 5px;
+		padding: 0px;
+	}
+	#logo{
+		justify-content: center;
+		width: 50%;
+		padding: 7px 0px 7px 0px; 
+	}
 }
 h1 span{
 	color: #1AADD6;
@@ -128,30 +140,13 @@ h1 span{
 	z-index: 3;
 	font-size: 90%;
 }
-.bouton_bleu
-{
-	font-family: 'robotomedium';
-	display: inline-block;
-	border: solid #1AADD6;
-	margin-top: -10%;
-	padding: 3px;
-	padding-left: 4px;
-	padding-right: 4px;
-	background-color: #1AADD6;
-	text-decoration: none;
-	color: white;
-}
-.bouton_bleu a{
-	text-decoration: none;
-	color: white;
-}
 .slider_image 
 {
 	width: 100%;
 	height: auto;
 	margin: 0px;
 	background-size: cover;
-	padding-top: 100px;
+	margin-top: 100px;
 	position: relative;
 }
 .slider_image img
@@ -173,16 +168,14 @@ h1 span{
 	z-index: 0;
 	display: inline-block;	
 }
-#slider2:target #slider1{
-	right: -100%;
-}
 .bouton_slide
 {
-	bottom: 300px;
+	bottom: 40%;
 	display: flex;
 	position: absolute;
 	z-index: 9;	
 }
+
 .bouton_slide.right
 {
 	right: 0px;
@@ -221,6 +214,7 @@ h1 span{
 	background-color: black;
 	opacity: 0.6;
 }
+
 .bouton_slide a
 {
 	text-decoration: none;
@@ -234,9 +228,62 @@ h1 span{
 	z-index: 99999;
 	margin-bottom: 2px;
 }
+#slogan{
+	font-family: 'robotomedium',sans-serif;
+	font-size: 1.9em;
+	font-weight: bold;
+	position: absolute;
+	width: 50%;
+	height: auto;
+	z-index: 10;
+	top: 30%;
+	left: 10%;
+	color: white;
+	text-align: left;	
+}
+@media screen and (min-width:960px) and (max-width:1280px){
+	#slogan{
+		font-size: 1.4em;
+		top: 20%;
+	}
+}
+@media screen and (min-width:319px) and (max-width:959px){
+	#slogan{
+		font-size:1.1em;
+		top: 15%;
+	}
+}
+@media screen and (max-width: 320px){
+	#slogan{
+		font-size: 0.1em;
+		top: 5%;
+	}
+}
+#slogan p{
+	font-family: 'robotoregular',sans-serif;
+	font-size: 0.6em;	
+}
+.bouton_bleu
+{
+	font-family: 'robotomedium';
+	display: inline-block;
+	border: solid #1AADD6;
+	margin-top: -10%;
+	padding: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #1AADD6;
+	text-decoration: none;
+	color: white;
+}
+.bouton_bleu a{
+	text-decoration: none;
+	color: white;
+}
 h1 
 {
 	text-align: left;
+	margin: 0px;
 }
 #NOS_SERVICES
 {
@@ -254,7 +301,6 @@ h1
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	margin-top: 100px;
 	padding: 15px;		
 }
 .deco_titre 
@@ -262,7 +308,6 @@ h1
 	display: flex;
 	position: relative;
 	justify-content: center;
-	margin-top: -30px;
 	padding-bottom: 5px;	
 }
 hr /*trait gris sous les titres*/
@@ -326,6 +371,7 @@ i.point_titre{
 	display: flex;
 	
 }
+
 #aside_design img
 {
 	width: 50%;
@@ -343,6 +389,30 @@ i.point_titre{
 	margin: 40px;
 	overflow: auto;
 	text-align: justify;
+}
+@media screen and (min-width:481px) and (max-width:1024px){
+	.Screen_right{
+	
+	display: flex;
+	flex-direction: row;
+	padding-left: 110px;
+	padding-right: 80px;
+	margin: 40px;
+	overflow: auto;
+	text-align: justify;
+}
+}
+@media screen and (max-device-width: 480px){
+	.Screen_right{
+	
+	display: flex;
+	flex-direction: row;
+	padding-left: 110px;
+	padding-right: 80px;
+	margin: 40px;
+	overflow: auto;
+	text-align: justify;
+}
 }
 .Screen_right li
 {

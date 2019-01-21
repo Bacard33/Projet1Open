@@ -1,0 +1,42 @@
+/*
+#projets_photos figure .sub_text
+{
+	position: absolute;
+	opacity: 1;
+	bottom: 0px;
+	left: 0px;
+	right: 40px;
+	padding: 40px;
+}
+/* 
+#projets_photos figcaption:hover 
+{
+	position: absolute;
+	bottom: 13px;
+	left: 1px;
+	right: 1px;
+	padding: 15px;
+	background-color: rgba(0,0,0,0.3);
+	opacity: 1;
+	color: white;
+}
+#projets_photos figure:hover .sub_text
+{
+	position: absolute;
+	opacity: 1;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 10px;
+}
+*/
+.eye{
+	position: absolute;
+	color: white;
+	background-color: #1AADD6;
+	border: 3px solid white;
+	border-radius: 100%;
+	padding: 6px;
+	top: 70px;
+	right: 20px;
+}
