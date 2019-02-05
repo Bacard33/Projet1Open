@@ -264,7 +264,7 @@ header nav li:hover
 /*FIN RESPONSIVE*/
 /* -------- SLIDER ------- */
 
-#WEBAGENCY{
+#webagency{
 	position: absolute;
 	top: 280px;
 	z-index: 3;
@@ -403,8 +403,6 @@ header nav li:hover
 	.bouton_slide{
 		bottom: 30%;
 	}
-	.bouton_bleu{
-	}	
 }
 @media screen and (max-width: 480px){
 	.slider_image 
@@ -430,8 +428,7 @@ header nav li:hover
 	}
 	.bouton_slide{
 		bottom: 25%;
-	}
-	
+	}	
 }
 @media screen and (max-width: 320px){
 	#slogan{
@@ -467,7 +464,7 @@ h1
 }
 /* ------- SECTION SERVICES -------- */
 
-#NOS_SERVICES
+#nos_services
 {
 	display: flex;
 	width: 100%;
@@ -544,6 +541,7 @@ i.point_titre{
 {
 	font-family: 'robotoregular';
 	text-align: center;	
+	margin-top: -5px;
 }
 /* -- ASIDE -- ECRAN + TEXT DESIGN -- */
 #aside_design
@@ -568,7 +566,7 @@ i.point_titre{
 	width: 50%;
 
 }
-.Screen_right{
+.screen_right{
 	
 	display: flex;
 	flex-direction: column;
@@ -585,7 +583,7 @@ i.point_titre{
 	#aside_design{
 		flex-direction: column;
 	}
-	.Screen_right
+	.screen_right
 	{
 		display: flex;
 		width: 80%;
@@ -621,7 +619,7 @@ i.point_titre{
 		padding-right: 0px;
 		align-self: center;
 	}
-	.Screen_right
+	.screen_right
 	{
 		display: flex;
 		width: 90%;
@@ -632,7 +630,7 @@ i.point_titre{
 		text-align: justify;
 		flex-wrap: wrap;
 	}
-	.Screen_right ul{
+	.screen_right ul{
 		padding: 0px;
 		justify-content: center;
 	}
@@ -655,7 +653,7 @@ i.point_titre{
 		padding-right: 0px;
 		align-self: center;
 	}
-	.Screen_right{
+	.screen_right{
 		display: flex;
 		flex-direction: column;
 		padding-right: 80px;
@@ -664,7 +662,7 @@ i.point_titre{
 		text-align: justify;
 		flex-wrap: wrap;
 	}
-	.Screen_right ul{
+	.screen_right ul{
 		padding: 0px;
 		justify-content: center;
 	}
@@ -674,7 +672,7 @@ i.point_titre{
 	}	
 }
 /*FIN RESPONSIVE*/
-.Screen_right li
+.screen_right li
 {
 	list-style-type: none;
 }
@@ -711,7 +709,7 @@ i.point_titre{
 }
 /* -------- SECTION PROJETS -------- */
 
-#NOS_PROJETS
+#nos_projets
 {
 	display: flex;
 	width: 100%;
@@ -730,9 +728,6 @@ i.point_titre{
 	margin-top: 25px;
 	padding: 15px;	
 }
-.paragraphe{
-	margin-top: -5px;
-}
 .hidden{
 	display: none;
 	
@@ -747,7 +742,7 @@ i.point_titre{
 	background-color: #E6E1E1;
 	text-decoration: none;
 }
-#Menu ul
+#menu ul
 {
 	display: flex;
 	list-style-type: none;
@@ -755,7 +750,7 @@ i.point_titre{
 	margin-top: 60px;
 	padding: 0;
 }
-#Menu a
+#menu a
 {
 	border: solid #E6E1E1;
 	font-size: 18px; 
@@ -767,7 +762,7 @@ i.point_titre{
 	color: black;
 	padding: 5px 10px 5px 10px;
 }
-#Menu ul a:hover
+#menu ul a:hover
 {
 	text-decoration: none;
 	display: inline-block;
@@ -847,17 +842,17 @@ i.point_titre{
 	font-weight: bold;
 	color: white;	
 }
-figure.Portfolio 
+figure.portfolio 
 {
 	display: block;
 	position: relative;
 	text-align: left;
 }
-figure.Creative
+figure.creative
 {
 	text-align: left;
 }
-figure.Corporate
+figure.corporate
 {
 	text-align: left;
 }
@@ -871,19 +866,19 @@ figure.Corporate
 	bottom: 50px;
 	right: 10px;
 }
-figure.Portfolio:hover figcaption
+figure.portfolio:hover figcaption
 {
 	display: block;
 	
 }
 /*RESPONSIVE*/
 @media screen and (min-width: 740px) and (max-width: 959px){
-	#Menu ul{
+	#menu ul{
 		margin-top: 0px;
 	}
 }
 @media screen and (min-width:481px) and (max-width:739px){
-	#Menu ul{
+	#menu ul{
 		margin-top: 0px;
 	}
 	#projets_photos figure{
@@ -910,18 +905,18 @@ figure.Portfolio:hover figcaption
 	#projet{
 		padding: 0px;
 	}
-	#Menu{
+	#menu{
 		margin-bottom: 5px;
 		width: 100%;
 		display: inline-flex;
 		justify-content: center;
 	}
-	#Menu a{
+	#menu a{
 		font-size: 15px;
 		text-align: center;
 		margin: 0px;
 	}
-	#Menu ul{
+	#menu ul{
 		margin-top: 0px;
 		text-align: center;
 	}
@@ -954,15 +949,15 @@ figure.Portfolio:hover figcaption
 	}
 }
 @media screen and (max-width: 320px){
-	#Menu a{
+	#menu a{
 		margin: 0px;
 		font-size: 12px;
 	}
-	#Menu ul{
+	#menu ul{
 		margin: 0px;
 		text-align: center;
 	}
-	#Menu p{
+	#menu p{
 		margin-bottom: 5px;
 	}
 }
@@ -988,12 +983,12 @@ iframe
 #filtre_bleu 
 {
 	position: absolute;
-	background-color: #87CEFA;
+	background-color: #1aadd6;
 	width: 100%;
 	height: 100%;
-	opacity: 0.5;
+	opacity: 0.9;
 }
-#Formulaire
+#formulaire
 {
 	position: absolute;
 	text-align: left;
@@ -1001,14 +996,14 @@ iframe
 	height: 480px;
 	top:30px;
 	right:100px;
-	background-color: #F5F5F5;
+	background-color: #e2e2e2;
 	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-family: 'robotomedium';
-	opacity: 0.8;
+	opacity: 0.9;
 }
-#Formulaire p{
+#formulaire p{
 	line-height: 3px;
 	font-family: 'robotoregular';
 }
@@ -1040,7 +1035,7 @@ textarea {
 }
 /*RESPONSIVE*/
 @media screen and (max-width: 480px){
-	#Formulaire{
+	#formulaire{
 		width: 70%;
 		justify-content: center;
 		right: 0px;
@@ -1048,7 +1043,7 @@ textarea {
 	}
 }
 @media screen and (max-width: 320px){
-	#Formulaire{
+	#formulaire{
 		width: 70%;
 		justify-content: center;
 		right: 0px;
