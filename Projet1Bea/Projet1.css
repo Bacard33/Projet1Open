@@ -95,7 +95,7 @@ h1 span{
 header
 {
 	position: fixed;
-	z-index: 9;	
+	z-index: 20;	
 	width: 100%;
 	top: 0px;
 }
@@ -167,6 +167,7 @@ header nav li:hover
 		text-align: center;
 		width: 100%;
 		margin: 0px;
+		z-index: 20;
 	}
 	header nav{
 		margin-top: 0px;
@@ -353,7 +354,7 @@ header nav li:hover
 	bottom: 2px;
 	border-top: 3px solid #1AADD6;
 	width: 150px;
-	z-index: 99999;
+	z-index: 10;
 	margin-bottom: 2px;
 }
 #slogan{
@@ -370,10 +371,15 @@ header nav li:hover
 	text-align: left;	
 }
 /*RESPONSIVE*/
+@media screen and (min-width: 1281px){
+	#slogan{
+		top: 35%;
+	}
+}
 @media screen and (min-width:960px) and (max-width:1280px){
 	#slogan{
 		font-size: 1.2em;
-		top: 15%;
+		top: 22%;
 	}
 }
 @media screen and (min-width: 740px) and (max-width: 959px){
@@ -398,7 +404,7 @@ header nav li:hover
 	}
 	#slogan{
 		font-size: 0.7em;
-		top: 18%;
+		top: 15%;
 	}
 	.bouton_slide{
 		bottom: 30%;
@@ -432,7 +438,7 @@ header nav li:hover
 }
 @media screen and (max-width: 320px){
 	#slogan{
-		top: 30%;
+		top: 22%;
 	}
 }
 /*FIN RESPONSIVE*/
@@ -479,8 +485,9 @@ h1
 	font-size: 1.9em;
 	display: flex;
 	justify-content: center;
-	text-align: center;
-	padding: 15px;		
+	text-align: center;	
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 .deco_titre 
 {
@@ -656,10 +663,10 @@ i.point_titre{
 	.screen_right{
 		display: flex;
 		flex-direction: column;
-		padding-right: 80px;
-		margin-left: -30px;
+		padding: 0px;
+		margin-right: 50px;
+		margin-left: -50px;
 		overflow: auto;
-		text-align: justify;
 		flex-wrap: wrap;
 	}
 	.screen_right ul{
@@ -667,6 +674,7 @@ i.point_titre{
 		justify-content: center;
 	}
 	.icones{
+		display: none;
 		margin-top: 0px;
 		margin-left: 20px;
 	}	
@@ -726,7 +734,7 @@ i.point_titre{
 	justify-content: center;
 	text-align: center;
 	margin-top: 25px;
-	padding: 15px;	
+	margin-bottom: 15px;	
 }
 .hidden{
 	display: none;
@@ -747,8 +755,8 @@ i.point_titre{
 	display: flex;
 	list-style-type: none;
 	justify-content: center;
-	margin-top: 60px;
-	padding: 0;
+	margin-top: 40px;
+	padding: 5px 10px 5px 10px;
 }
 #menu a
 {
@@ -772,12 +780,13 @@ i.point_titre{
 	border-collapse: collapse;
 	border-bottom: 5px solid #2D9FC4;
 	color: white;
-	padding: 5px 10px 5px 10px;	
+	padding: 5px 10px 1px 10px;	
 }
 .fleche_bas
 {
 	opacity: 0;
 	position: absolute;	
+	top: 30px;
 }
 .menu_lien:hover .fleche_bas
 {
@@ -919,6 +928,7 @@ figure.portfolio:hover figcaption
 	#menu ul{
 		margin-top: 0px;
 		text-align: center;
+		padding: 0px;
 	}
 	
 	.hidden{
@@ -933,7 +943,7 @@ figure.portfolio:hover figcaption
 	} 
 	#projets_photos figure 
 {
-	width: 50%;
+	width: 80%;
 	display: inline-block;
 	position: relative;
 	margin: 0px;
@@ -974,7 +984,7 @@ footer
 	position: relative;
 	max-width: 100%;
 	height: auto;
-	opacity: 0.8;	
+	opacity: 0.7;	
 }
 iframe
 {
