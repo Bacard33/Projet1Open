@@ -385,7 +385,7 @@ header nav li:hover
 @media screen and (min-width: 740px) and (max-width: 959px){
 	#slogan{
 		font-size: 0.9em;
-		top: 20%;
+		top: 24%;
 	}
 }
 @media screen and (min-width:481px) and (max-width:739px){
@@ -404,7 +404,7 @@ header nav li:hover
 	}
 	#slogan{
 		font-size: 0.7em;
-		top: 15%;
+		top: 28%;
 	}
 	.bouton_slide{
 		bottom: 30%;
