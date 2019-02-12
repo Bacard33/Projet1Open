@@ -459,15 +459,18 @@ h1
 		width: 20px;
 		height: 40px;
 	}
+	#slogan{
+		top: 14%;
+	}
 	#slogan h1{
-		font-size: 0.8em;
+		font-size: 0.7em;
 }
 	#slogan p{
 		font-size: 0.5em;
 	}
 }
 	
-@media screen and (max-width: 481px) and (max-width: 639px){
+@media screen and (min-width: 481px) and (max-width: 639px){
 	.slider_image img
 	{
 		width: 100%;
@@ -489,7 +492,7 @@ h1
 		bottom: 30%;
 	}
 }
-@media screen and (max-width: 640px) and (max-width: 810px){
+@media screen and (min-width: 640px) and (max-width: 810px){
 	#slogan h1{
 		font-size: 0.8em;
 }
@@ -497,7 +500,7 @@ h1
 		font-size: 0.6em;
 	}
 }
-@media screen and (max-width: 811px) and (max-width: 959px){
+@media screen and (min-width: 811px) and (max-width: 959px){
 	#slogan h1{
 		font-size: 0.8em;
 }
@@ -505,7 +508,7 @@ h1
 		font-size: 0.6em;
 	}
 }
-@media screen and (max-width: 960px) and (max-width: 1600px){
+@media screen and (min-width: 960px) and (max-width: 1600px){
 	#slogan{
 		font-size: 1.1em;
 	}
