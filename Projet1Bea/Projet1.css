@@ -160,7 +160,8 @@ header nav li:hover
 	header nav li
 	{
 		padding-top: 15px;
-		justify-content: center; 
+		justify-content: center;
+		margin-right: 15px; 
 	}
 	header nav li:hover
 	{
@@ -324,6 +325,7 @@ header nav li:hover
 .slider_image img
 {
 	width: 100%;
+	position: relative;
 }
 #slider1
 {
@@ -400,7 +402,7 @@ header nav li:hover
 }
 #slogan{
 	font-family: 'robotomedium',sans-serif;
-	font-size: 1.7em;
+	font-size: 1.4em;
 	font-weight: bold;
 	position: absolute;
 	width: 50%;
@@ -409,12 +411,13 @@ header nav li:hover
 	top: 25%;
 	left: 10%;
 	color: white;
-	text-align: left;	
+	text-align: left;
 }
 #slogan p{
 	font-family: 'robotoregular',sans-serif;
-	font-size: 0.8em;	
+	font-size: 0.8em;
 }
+
 .bouton_bleu
 {
 	font-family: 'robotomedium';
@@ -456,9 +459,11 @@ h1
 		width: 20px;
 		height: 40px;
 	}
-	#slogan{
-		font-size: 0.6em;
-		top: 10%;
+	#slogan h1{
+		font-size: 0.8em;
+}
+	#slogan p{
+		font-size: 0.5em;
 	}
 }
 	
@@ -471,35 +476,38 @@ h1
 	{
 		width: 100%;
 		height: auto;
-		margin: 0px;
+		top: 0px;
 		background-size: cover;
-		padding-top: 100px;
 		position: relative;
 	}
 	#slogan{
 		font-size: 0.7em;
-		top: 10%;
+		width: 80%;
 	}
+
 	.bouton_slide{
 		bottom: 30%;
 	}
 }
 @media screen and (max-width: 640px) and (max-width: 810px){
-	#slogan{
-		font-size: 1.2em;
-		top: 15%;
+	#slogan h1{
+		font-size: 0.8em;
+}
+	#slogan p{
+		font-size: 0.6em;
 	}
 }
 @media screen and (max-width: 811px) and (max-width: 959px){
-	#slogan{
-		font-size: 1.2em;
-		top: 25%;
+	#slogan h1{
+		font-size: 0.8em;
+}
+	#slogan p{
+		font-size: 0.6em;
 	}
 }
 @media screen and (max-width: 960px) and (max-width: 1600px){
 	#slogan{
-		font-size: 1.2em;
-		top: 25%;
+		font-size: 1.1em;
 	}
 }
 /*FIN RESPONSIVE*/
