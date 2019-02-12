@@ -951,6 +951,14 @@ figure.portfolio:hover figcaption
 		text-align: center;
 		padding: 0px;
 	}
+	.menu_lien:hover .fleche_bas
+{
+	opacity: 1;
+	display: flex;
+	color: #1AADD6;
+	margin-left: 25px;
+	margin-top: -2%;
+}
 	
 	.hidden{
 		display: block;
