@@ -968,7 +968,8 @@ figure.portfolio:hover figcaption
 		
 	}
 	#projets_photos figcaption{
-		font-size: 0.6em;
+		font-size: 0.7em;
+		bottom: 9px;
 	} 
 	#projets_photos figure 
 {
@@ -995,7 +996,7 @@ figure.portfolio:hover figcaption
 		width: 40%;
 	}
 	#projets_photos figcaption{
-		font-size: 0.7em;
+		font-size: 0.6em;
 		align-items: center;
 		padding: 22px;
 	} 
@@ -1009,9 +1010,13 @@ figure.portfolio:hover figcaption
 	}
 }
 @media screen and (min-width: 640px) and (max-width: 810px){
+	#projets_photos figure{
+		width: 40%;
+	}
 	#menu ul{
 		margin-top: 0px;
 	}
+	
 }
 /*FIN RESONSIVE*/
 
