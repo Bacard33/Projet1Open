@@ -785,8 +785,10 @@ i.point_titre{
 	margin-bottom: 15px;	
 }
 .hidden{
-	display: none;
-	
+	display: none;	
+}
+#menu{
+	position: relative;
 }
 .menu_lien{
 	position: relative;
@@ -797,6 +799,27 @@ i.point_titre{
 	font-family: 'robotoregular';
 	background-color: #E6E1E1;
 	text-decoration: none;
+}
+
+
+#menu li .menu_lien_ouvert a{
+	background-color: #1AADD6;
+	color: white;
+	text-decoration: none;
+	font-family: 'robotoregular';
+	border: 5px solid #1AADD6;
+	border-bottom: 5px solid #2D9FC4;
+	padding: 5px 10px 1px 10px;
+	align-items: center;
+}
+#menu li:hover .menu_lien_ouvert a{
+	padding: 5px 10px 1px 10px;
+}
+.menu_lien_ouvert{
+	margin-top: 26px;
+}
+.menu_lien_ouvert:hover{
+	margin-top: 16px;
 }
 #menu ul
 {
@@ -828,7 +851,7 @@ i.point_titre{
 	border-collapse: collapse;
 	border-bottom: 5px solid #2D9FC4;
 	color: white;
-	padding: 5px 10px 1px 10px;	
+	padding: 5px 8px 1px 8px;	
 }
 .fleche_bas
 {
@@ -841,8 +864,15 @@ i.point_titre{
 	opacity: 1;
 	display: flex;
 	color: #1AADD6;
-	margin-left: 30px;
-	margin-top: 2%;
+	margin-left: 33px;
+	margin-top: 3px;
+}
+#menu li .menu_lien_ouvert a .fleche_bas{
+	opacity: 1;
+	color: #1AADD6;
+	margin-left: -42px;
+	margin-top: 24px;
+	
 }
 #cadre_gris
 {
@@ -958,6 +988,13 @@ figure.portfolio:hover figcaption
 	color: #1AADD6;
 	margin-left: 25px;
 	margin-top: -2%;
+}
+	#menu li .menu_lien_ouvert a .fleche_bas{
+	opacity: 1;
+	color: #1AADD6;
+	margin-left: -30px;
+	margin-top: 15px;
+	
 }
 	
 	.hidden{
